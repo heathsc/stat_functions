@@ -108,6 +108,13 @@ mod tests {
     }
 
     #[test]
+    fn dt_test2() {
+        let s = StudentsT::new(4.0).unwrap();
+        let z = s.dt(0.0);
+        assert!((z - 0.375).abs() < 1.0e-12)
+    }
+
+    #[test]
     fn pt_test() {
         let z = pt(2.5, 2.8).unwrap();
         assert!((z - 0.953134106244337).abs() < 1.0e-12)
