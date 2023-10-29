@@ -32,7 +32,6 @@ impl StudentsT {
         _students_t_cdf(t, self.v, Some(self.lnbeta))
     }
 }
-
 fn check_students_t_param(v: f64) -> Result<()> {
     if v <= 0.0 {
         Err(StatFuncError::InvalidStudentsTParameter)
