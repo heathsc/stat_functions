@@ -1,6 +1,6 @@
 [package]
 name = "stat_functions"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2021"
 authors = ["Simon Heath <simon.heath@gmail.com>"]
 description = "A collections of useful statistics functions"
